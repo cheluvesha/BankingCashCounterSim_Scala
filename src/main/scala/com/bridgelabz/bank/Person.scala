@@ -32,6 +32,7 @@ class Person(name:String,choice:Int) {
       case _ => println("Invalid Choice")
     }
   }
+  // returns current queue person name
   def getName(): String = {
     NameOfPerson
   }

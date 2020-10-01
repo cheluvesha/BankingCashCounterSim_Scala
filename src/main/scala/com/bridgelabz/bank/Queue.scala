@@ -8,7 +8,7 @@ class Queue {
     val person = new Person(name:String,choice:Int)
     var next: Node = _
   }
-
+  // adds person to queue
   def enqueue(name: String,choice: Int): Unit = {
     val NewNode = new Node(name,choice)
     if(head == null && rear == null){
@@ -19,7 +19,7 @@ class Queue {
     }
     rear = NewNode
   }
-
+  // removes person from queue
   def dequeue(): Unit = {
     if(head == null){
     println("Queue is Empty")
@@ -34,7 +34,7 @@ class Queue {
       }
     }
   }
-
+  // displays the current queue person name
   def display(): Unit ={
     if(head == null){
       println("Queue Empty")
